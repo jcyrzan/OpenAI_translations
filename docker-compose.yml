@@ -1,0 +1,10 @@
+version: '2'
+services:
+  openai_translations:
+    image: openai_translations:latest
+    container_name: openai_translations
+    restart: always
+    ports:
+      - 5555:5000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
